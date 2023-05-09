@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression suite" verbose="1">
+    <groups>
+        <run>
+            <include name="regression">
+
+            </include>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.tutorialsninja.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Top Menu test" >
+        <classes>
+            <class name="com.tutorialsninja.testsuite.TopMenuTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Desktop test" >
+        <classes>
+            <class name="com.tutorialsninja.testsuite.DesktopsTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Laptops And Notebooks test" >
+        <classes>
+            <class name="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest"/>
+        </classes>
+    </test>
+
+
+
+    <test name="MyAccounts Test" >
+        <classes>
+            <class name="com.tutorialsninja.testsuite.MyAccountsTest"/>
+        </classes>
+    </test>
+</suite>
